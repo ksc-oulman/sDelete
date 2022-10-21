@@ -24,7 +24,7 @@ set /a hdd=hdd/1048576
 set TimeStamp=%DATE:~10,4%%DATE:~4,2%%DATE:~7,2%
 
 REM Creates Network Log File
-echo. >>l:\DiskWipeResults.txt
+echo. >>C:\Wipes\DiskWipeResults.txt
 echo Date:     		%TimeStamp% >>C:\Wipes\DiskWipeResults.txt
 echo Serial:   		%serial% >>C:\Wipes\DiskWipeResults.txt
 echo Vendor:   		%compvendor% >>C:\Wipes\DiskWipeResults.txt
@@ -32,7 +32,7 @@ echo Model:    		%compname% >>C:\Wipes\DiskWipeResults.txt
 echo CPU Type \ Speed:  	%CPUname% >>C:\Wipes\DiskWipeResults.txt
 echo Memory:  		%Memory%MB >>C:\Wipes\DiskWipeResults.txt
 echo HDD Size: 		%hdd%GB >>C:\Wipes\DiskWipeResults.txt
-echo ____________________________________________________________ >>l:\DiskWipeResults.txt
+echo ____________________________________________________________ >>C:\Wipes\DiskWipeResults.txt
 
 
 REM Creates Network Label for Machine
