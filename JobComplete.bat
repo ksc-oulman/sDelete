@@ -1,4 +1,4 @@
-Echo off
+Echo offFORMAT
 REM - Not using this Command Here, Doing it in TS Now
 REM net use l: \\Server\Share\DiskWipeResults /user:Domain\User Password
 
@@ -24,27 +24,27 @@ set /a hdd=hdd/1048576
 set TimeStamp=%DATE:~10,4%%DATE:~4,2%%DATE:~7,2%
 
 REM Creates Network Log File
-echo. >>C:\Wipes\DiskWipeResults.txt
-echo Date:     		%TimeStamp% >>C:\Wipes\DiskWipeResults.txt
-echo Serial:   		%serial% >>C:\Wipes\DiskWipeResults.txt
-echo Vendor:   		%compvendor% >>C:\Wipes\DiskWipeResults.txt
-echo Model:    		%compname% >>C:\Wipes\DiskWipeResults.txt
-echo CPU Type \ Speed:  	%CPUname% >>C:\Wipes\DiskWipeResults.txt
-echo Memory:  		%Memory%MB >>C:\Wipes\DiskWipeResults.txt
-echo HDD Size: 		%hdd%GB >>C:\Wipes\DiskWipeResults.txt
-echo ____________________________________________________________ >>C:\Wipes\DiskWipeResults.txt
+echo. >>.\logs\DiskWipeResults.txt
+echo Date:     		%TimeStamp% >>.\logs\DiskWipeResults.txt
+echo Serial:   		%serial% >>.\logs\DiskWipeResults.txt
+echo Vendor:   		%compvendor% >>.\logs\DiskWipeResults.txt
+echo Model:    		%compname% >>.\logs\DiskWipeResults.txt
+echo CPU Type \ Speed:  	%CPUname% >>.\logs\DiskWipeResults.txt
+echo Memory:  		%Memory%MB >>.\logs\DiskWipeResults.txt
+echo HDD Size: 		%hdd%GB >>.\logs\DiskWipeResults.txt
+echo ____________________________________________________________ >>.\logs\DiskWipeResults.txt
 
 
 REM Creates Network Label for Machine
-echo Vendor:   		%compvendor% >>C:\Wipes\DiskWipe-%serial%.txt
-echo Model:    		%compname% >>C:\Wipes\DiskWipe-%serial%.txt
-echo Serial:   		%serial% >>C:\Wipes\DiskWipe-%serial%.txt
-echo CPU Type \ Speed:  	%CPUname% >>C:\Wipes\DiskWipe-%serial%.txt
-echo Memory:  		%Memory%MB >>C:\Wipes\DiskWipe-%serial%.txt
-echo HDD Size: 		%hdd%GB >>C:\Wipes\DiskWipe-%serial%.txt
-echo. >>C:\Wipes\DiskWipe-%serial%.txt
-echo. >>C:\Wipes\DiskWipe-%serial%.txt
-echo DoD 5220.22-M sanitization Wipe using MS SDELETE - 3 Passes >>C:\Wipes\DiskWipe-%serial%.txt
-echo Date Sanitzed:	%TimeStamp% >>C:\Wipes\DiskWipe-%serial%.txt
-echo. >>C:\Wipes\DiskWipe-%serial%.txt
-echo. >>C:\Wipes\DiskWipe-%serial%.txt
+echo Vendor:   		%compvendor% >>.\logs\DiskWipe-%serial%.txt
+echo Model:    		%compname% >>.\logs\DiskWipe-%serial%.txt
+echo Serial:   		%serial% >>.\logs\DiskWipe-%serial%.txt
+echo CPU Type \ Speed:  	%CPUname% >>.\logs\DiskWipe-%serial%.txt
+echo Memory:  		%Memory%MB >>.\logs\DiskWipe-%serial%.txt
+echo HDD Size: 		%hdd%GB >>.\logs\DiskWipe-%serial%.txt
+echo. >>.\logs\DiskWipe-%serial%.txt
+echo. >>.\logs\DiskWipe-%serial%.txt
+echo DoD 5220.22-M sanitization Wipe using MS SDELETE - 3 Passes >>.\logs\DiskWipe-%serial%.txt
+echo Date Sanitzed:	%TimeStamp% >>.\logs\DiskWipe-%serial%.txt
+echo. >>.\logs\DiskWipe-%serial%.txt
+echo. >>.\logs\DiskWipe-%serial%.txt
