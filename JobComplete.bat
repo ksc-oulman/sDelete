@@ -48,17 +48,3 @@ echo DoD 5220.22-M sanitization Wipe using MS SDELETE - 3 Passes >>C:\Wipes\Disk
 echo Date Sanitzed:	%TimeStamp% >>C:\Wipes\DiskWipe-%serial%.txt
 echo. >>C:\Wipes\DiskWipe-%serial%.txt
 echo. >>C:\Wipes\DiskWipe-%serial%.txt
-
-REM Creates Local Log file that displays at end of Process
-
-echo Disk Wipe Complete, Please Record Data for Records >>X:\Windows\JobComplete.txt
-echo This computer has finished with a DoD 5220.22-M sanitization of the local hard drive. >>X:\Windows\JobComplete.txt
-echo Please close this file and turn off the computer. >>X:\Windows\JobComplete.txt
-echo. >>X:\Windows\JobComplete.txt
-echo Date:     		%TimeStamp% >>X:\Windows\JobComplete.txt
-echo Serial:   		%serial% >>X:\Windows\JobComplete.txt
-echo Vendor:   		%compvendor% >>X:\Windows\JobComplete.txt
-echo Model:    		%compname% >>X:\Windows\JobComplete.txt
-echo CPU Type \ Speed:  	%CPUname% >>X:\Windows\JobComplete.txt
-echo Memory:  		%Memory%MB >>X:\Windows\JobComplete.txt
-echo HDD Size: 		%hdd%GB >>X:\Windows\JobComplete.txt
